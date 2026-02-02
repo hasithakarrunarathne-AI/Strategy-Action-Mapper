@@ -1,0 +1,68 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+.env/
+.env.*
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Chroma / Vector DB
+# =========================
+chroma/
+chromadb/
+*.sqlite3
+
+# =========================
+# Outputs / generated artifacts
+# =========================
+outputs/
+graphs/
+reports/
+runs.jsonl
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Jupyter (if used later)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Model artifacts (Ollama)
+# =========================
+*.gguf
+*.bin
