@@ -35,7 +35,7 @@ def extract_actions(text: str):
         actions.append({
             "id": aid,
             "type": "action",
-            "title": title,       # ✅ new field (headline)
+            "title": title, 
             "text": full_text,
             "linked_to": linked,
         })

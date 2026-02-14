@@ -130,7 +130,7 @@ def generate_strategy_improvement(
     - before/after boosted similarity (Chroma distance->similarity + linked_to boost)
     """
 
-    # ---- BEFORE retrieval (same logic as your alignment pipeline) ----
+    # ---- BEFORE retrieval ----
     raw = top_actions_for_strategy(store, strategy_text, k=retrieve_k)
     ranked = rerank_with_linked_to(raw, strategy_id, bonus=linked_bonus)
     before_raw, before_boosted, before_best_id = _best_scores(ranked)
