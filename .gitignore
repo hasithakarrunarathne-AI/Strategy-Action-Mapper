@@ -59,4 +59,3 @@ graphs/
 # Model artifacts (Ollama)
 # =========================
 *.gguf
-*.bin
