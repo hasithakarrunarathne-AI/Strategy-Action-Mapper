@@ -7,6 +7,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from src.embeddings import EmbedStore
 from src.retrieve import top_actions_for_strategy, rerank_with_linked_to
 from src.llm_ollama import ollama_generate
+from src.llm import llm_generate
 
 
 def _extract_json(text: str) -> Dict[str, Any]:
@@ -142,7 +143,9 @@ def generate_strategy_improvement(
     last_after_boosted = 0.0
 
     for attempt in range(max_retries + 1):
-        out = ollama_generate(prompt, model=model, temperature=temperature)
+        #out = ollama_generate(prompt, model=model, temperature=temperature)
+
+        out = llm_generate(prompt, model=model, temperature=temperature)
 
         try:
             payload = _extract_json(out)
@@ -297,7 +300,10 @@ def generate_strategy_improvement_agentic(
     current_text = strategy_text
 
     for it in range(1, max_iters + 1):
-        out = ollama_generate(prompt, model=model, temperature=temperature)
+        #out = ollama_generate(prompt, model=model, temperature=temperature)
+
+        out = llm_generate(prompt, model=model, temperature=temperature)
+
 
         try:
             payload = _extract_json(out)

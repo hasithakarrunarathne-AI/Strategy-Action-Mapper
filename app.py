@@ -10,6 +10,18 @@ import json
 from datetime import datetime
 from pathlib import Path
 from src.report import generate_markdown_report
+import os
+
+def _apply_secrets_to_env():
+    # Streamlit Cloud: values come from st.secrets
+    # Local: usually no secrets -> will default to Ollama
+    for key in ("OPENAI_API_KEY", "LLM_PROVIDER", "OPENAI_MODEL"):
+        try:
+            if key in st.secrets and st.secrets[key]:
+                os.environ[key] = str(st.secrets[key])
+        except Exception:
+            pass
+_apply_secrets_to_env()
 
 Path("outputs").mkdir(exist_ok=True)
 
