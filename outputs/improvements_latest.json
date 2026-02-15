@@ -1,0 +1,59 @@
+{
+  "SO3.1": {
+    "strategy_id": "SO3.1",
+    "issue": "missing_kpi",
+    "top_actions_used": [
+      "A3.2"
+    ],
+    "suggestions": [
+      {
+        "type": "rewrite_strategy",
+        "proposed_text": "Increase annual research output to 200+ publications in indexed journals by 2028 through the establishment of a robust Research Grant Application Support Program, targeting 40 grant applications with $2M total requested funding.",
+        "rationale": "The proposed strategy now includes specific actions and KPIs that align more closely with the provided action items. This will help measure progress towards the goal of increasing research output.",
+        "kpis": [
+          {
+            "name": "Annual Research Output",
+            "metric": "Number of publications in indexed journals",
+            "target": "200+ publications",
+            "timeframe": "2028"
+          },
+          {
+            "name": "Grant Application Success Rate",
+            "metric": "Percentage of successful grant applications",
+            "target": "50%",
+            "timeframe": "2028"
+          },
+          {
+            "name": "Total Grant Funding Secured",
+            "metric": "Dollars in grant funding secured",
+            "target": "$2M",
+            "timeframe": "2028"
+          }
+        ],
+        "expected_alignment_gain": "high",
+        "citations": [
+          "A3.2"
+        ]
+      }
+    ],
+    "evaluation": {
+      "before_best_action_id": "A3.2",
+      "after_best_action_id": "A3.2",
+      "before_raw_similarity": 0.3292,
+      "before_boosted_similarity": 0.5292,
+      "after_raw_similarity": 0.5117,
+      "after_boosted_similarity": 0.7117,
+      "delta_boosted": 0.1824,
+      "passed": true,
+      "iterations": [
+        {
+          "iter": 1,
+          "after_best_action_id": "A3.2",
+          "after_boosted": 0.7117,
+          "delta": 0.1824,
+          "passed": true
+        }
+      ]
+    }
+  }
+}

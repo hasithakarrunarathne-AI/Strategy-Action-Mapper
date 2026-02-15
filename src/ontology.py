@@ -14,6 +14,7 @@ ONTOLOGY: Dict[str, List[str]] = {
     # Research / grants
     "research output": ["publications", "indexed journals", "citations", "h-index"],
     "grant support": ["grant applications", "proposal writing", "budget planning", "pre-submission review", "external funding"],
+    
 }
 
 def expand_with_ontology(text: str, max_terms: int = 20) -> str:

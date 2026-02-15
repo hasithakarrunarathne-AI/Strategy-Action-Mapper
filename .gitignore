@@ -46,10 +46,7 @@ chromadb/
 # =========================
 # Outputs / generated artifacts
 # =========================
-outputs/
 graphs/
-reports/
-runs.jsonl
 
 # =========================
 # Logs
