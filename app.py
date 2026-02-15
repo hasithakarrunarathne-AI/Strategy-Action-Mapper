@@ -193,11 +193,11 @@ with right:
 
 with left:
     st.markdown("---")
-    st.markdown("### LLM Improvements (Ollama)")
+    st.markdown("### LLM Improvements (OpenAI or Ollama)")
     if row["label"] in ["Weak", "Not Covered (Year-1)"]:
         st.info("This strategy needs improvement suggestions.")
         if st.button("Generate Improvement Suggestions"):
-            with st.spinner("Generating with Ollama + RAG..."):
+            with st.spinner("Generating with OpenAI or Ollama + RAG..."):
                 # payload = generate_strategy_improvement(
                 #     store=store,
                 #     strategy_id=row["strategy_id"],
