@@ -39,9 +39,6 @@ Thumbs.db
 # =========================
 # Chroma / Vector DB
 # =========================
-chroma/
-chromadb/
-*.sqlite3
 
 # =========================
 # Outputs / generated artifacts
